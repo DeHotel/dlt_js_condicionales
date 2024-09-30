@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío Condiciones - javaScript</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <section class="section1">
+      <div class="container">
+        <h1>
+          Haz click sobre la imagen <br />
+          para ver el funcionamiento del borde
+        </h1>
+        <img
+          id="section1-imagen"
+          src="./assets/img/casa1.jpeg"
+          alt="Imagen sección 1"
+          width="300px"
+        />
+      </div>
+    </section>
+    <hr />
+    <!-- PARTE 2 -->
+    <section id="parte-2">
+      <div class="container">
+        <h1>STICKERS</h1>
+        <h3>Puedes llevar hasta 10 stickers en total</h3>
+        <div class="row">
+          <img src="./assets/img/sticker1.jpeg" alt="Sticker1" />
+          <img src="./assets/img/sticker2.jpeg" alt="Sticker2" />
+          <img src="./assets/img/sticker3.jpeg" alt="Sticker3" />
+        </div>
+        <div class="row">
+          <input id="cantidad1" type="number" min="0" max="10" />
+          <input id="cantidad2" type="number" min="0" max="10" />
+          <input id="cantidad3" type="number" min="0" max="10" />
+        </div>
+        <h3 id="mensajeStickers"></h3>
+        <button class="btnStickers" id="btnStickers">Verificar</button>
+      </div>
+    </section>
+    <hr />
+    <section id="parte-3">
+      <div class="container">
+        <h1>CLAVE DE SEGURIDAD</h1>
+        <div class="rowClave">
+          <select name="clave1" id="clave1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select name="clave2" id="clave2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select name="clave3" id="clave3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div class="rowClave">
+          <button class="btnPassword" id="btnPassword">Ingresar</button>
+        </div>
+        <div class="rowClave">
+          <h3 id="mensajePassword" class="mensajePassword"></h3>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/functions.js"></script>
+  </body>
+</html>
